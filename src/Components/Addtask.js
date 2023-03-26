@@ -8,7 +8,7 @@ function Addtask(props) {
         if(task.trim() === ''){
             return 
         } else {
-            axios.post('http://localhost:3001/api/tasks' , {
+            axios.post('https://todolist-server-6yeq.onrender.com/api/tasks' , {
                 todo : task,
                 isComplete : false
             }).then(res => {
