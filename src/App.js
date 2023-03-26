@@ -9,7 +9,7 @@ function App() {
   const [tasktoUpdate , setTasktoUpdate] = useState({})
   const [showPopup,setShowPopup] = useState(false)
   useEffect(() => {
-    axios.get('http://localhost:3001/api/tasks').then(res => {
+    axios.get('https://todolist-server-6yeq.onrender.com/api/tasks').then(res => {
       setTodolist(res.data)
     }).catch(err => console.log(err))
   },[])
